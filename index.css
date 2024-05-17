@@ -207,6 +207,7 @@ nav ul.active {
 #about {
     width: 80%;
     margin: auto;
+    
 }
 
 #aboutme-title {
@@ -222,6 +223,7 @@ nav ul.active {
     margin: auto;
     margin-top: 10px;
     padding-top: 150px;
+    
 
 }
 
@@ -296,17 +298,18 @@ nav ul.active {
     font-size: 15px;
     color: #E6E8FA;
     border-radius: 20px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
 }
 
 .home-img {
     /* border-bottom: 8px solid #2b758f;
     border-right: 8px solid #2b758f; */
-    padding: 10px;
+   
     /* padding-top: 0px;
     padding-left: 0px; */
     border-radius: 20px;
-    width: 80%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; 
+   
 }
 
 #skills {
@@ -448,7 +451,42 @@ nav ul.active {
 
 }
 
-.githubBtn,
+.githubBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+.project-github-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid #333;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+.project-github-link img {
+    width: 30px; /* Adjust the size of the icon */
+    margin-right: 10px;
+}
+.project-github-link p {
+    margin: 0;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+}
+.project-github-link:hover {
+    background-color: #333;
+    border-color: #333;
+}
+.project-github-link:hover p {
+    color: #fff;
+}
+.project-github-link:hover img {
+    filter: brightness(0) invert(1); /* Optional: Invert icon color on hover */
+}
 .Livebtn {
     width: 20%;
     display: flex;
@@ -820,6 +858,7 @@ input[type=submit]:hover {
 
 
     #home {
+
         width: 90%;
         flex-direction: column;
     }
@@ -846,6 +885,20 @@ input[type=submit]:hover {
     #Home_subdiv2 {
         width: 100%;
 
+    }
+    #user-detail-name {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 400%;
+        min-height: 100vh; /* Ensures full viewport height */
+        box-sizing: border-box;
+        padding: 20px; /* Optional padding */
+    }
+    .home-img {
+        width: auto;
+        height: auto; /* Ensures aspect ratio is maintained */
     }
 
     #about_main_subdiv {
